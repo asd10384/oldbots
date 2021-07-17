@@ -1,0 +1,13 @@
+{
+    "token": "",
+    "default_prefix": ";",
+    "msg_time": 10000,
+    "help_time": 35000,
+    "textchannel": {
+    },
+    "drole": [
+        "ADMINISTRATOR"
+    ],
+    "mongourl": "",
+    "youtubeapi": ""
+}

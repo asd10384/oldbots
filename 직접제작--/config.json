@@ -1,0 +1,18 @@
+{
+    "YOUTUBE_API_KEY": "AIzaSyD_WQragYFZnlzknengMPkW2i_UIWW6qY4",
+    "token": "NzU1NzY0ODI5OTIyNTI1MjQ1.X2IC2A._54l105_ZQ9DnYrd26_9W6Wq3dM",
+    "MAX_PLAYLIST_SIZE": 1000,
+    "PRUNING": false,
+    "botname": "Elisa",
+    "botchannelname": "봇 테스트용 채널입니다.",
+    "prefix": "//",
+    "roleid": {
+        "role": false,
+        "admin": "457782005728280577",
+        "subadmin": "457878758322601985"
+    },
+    "deletetime": 2000,
+    "deletetime2": 3000,
+    "setting": "문제있음",
+    "none": "없음"
+}

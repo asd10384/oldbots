@@ -1,0 +1,47 @@
+index.js token
+process.env.token
+
+#make file
+.gitignore
+node_modules/
+package-lock.json
+
+#make file
+Procile
+worker: node index.js
+
+#make file
+Aptfile
+git
+
+cmd
+git init
+
+bot cummit
+
+github
+command 2
+ctrl+c and ctrl+v
+git remote and git push
+git push -u origin master
+
+haroku
+deploy
+github connect
+
+scroll
+deploy branch
+
+resources
+pan
+ on
+confirm
+
+overview
+chak
+
+setting
+reveal config vars
+
+key token
+value real token

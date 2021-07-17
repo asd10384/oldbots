@@ -1,0 +1,17 @@
+{
+  "name": "r6-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    ".": "node index.js"
+  },
+  "author": "asd10384",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "dotenv": "^9.0.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

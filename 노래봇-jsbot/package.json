@@ -1,0 +1,21 @@
+{
+  "name": "asdmusicbot",
+  "version": "1.0.0",
+  "description": "노래봇",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "asd10384",
+  "license": "ISC",
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord": "^0.8.2",
+    "discord.js": "^12.3.1",
+    "dotenv": "^9.0.2",
+    "fs": "0.0.1-security",
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^3.2.2"
+  }
+}
