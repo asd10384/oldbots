@@ -1,0 +1,43 @@
+
+.main {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.main > .title {
+  font-size: 150%;
+  margin-bottom: 1%;
+}
+
+.main > .selfcheck > form {
+  font-size: 120%;
+}
+.main > .selfcheck > form > input {
+  margin-top: 2%;
+}
+.main > .selfcheck > form > #time {
+  font-size: 120%;
+  height: auto;
+  padding: 0.7% 0.7%;
+}
+
+.main > .selfcheck > form > .btn {
+  margin-top: 2%;
+  font-size: 120%;
+  font-weight: bold;
+  height: auto;
+  padding: 0.6% 0.8%;
+}
+.main > .selfcheck > form > .btn:hover {
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.main > .data {
+  margin-top: 4%;
+  font-size: 120%;
+}
+.main > .data > div {
+  margin-bottom: 1%;
+}

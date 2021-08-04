@@ -1,0 +1,181 @@
+
+/* 글꼴 */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+/* 글꼴 끝 */
+
+/* body CSS */
+body {
+  background: #252b2e;
+  margin-bottom: 30%;
+}
+/* body CSS END */
+
+/* 로고 */
+#logo {
+  background: url(../image/menu-bg.png) repeat;
+  padding-top: 0.05em;
+  padding-bottom: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo > a {
+  display: block;
+}
+#logo > a > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  height: 5em;
+}
+/* 로고 끝 */
+
+/* 시계 */
+#clock {
+  background: url(../image/menu-bg.png) repeat;
+  padding-top: 1.2em; /* 0.2em */
+  padding-bottom: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+#clock > #nowTimes > a {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 0 #0d0d0d;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+}
+/* 시계 끝 */
+
+/* 메뉴 */
+/* 메뉴 내용 */
+#menu,
+#menu > ul {
+  background: url(../image/highlight-bg.png) repeat;
+  padding-bottom: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+#menu:before,
+#menu:after,
+#menu > ul:before,
+#menu > ul:after {
+  content: "";
+  display: table;
+}
+#menu:after,
+#menu > ul:after {
+  clear: both;
+}
+#menu {
+  width: auto;
+  zoom: 1;
+}
+#menu > ul {
+  background: url(../image/menu-bg.png) repeat;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#menu > ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#menu > ul > li {
+  float: left;
+  position: relative;
+}
+#menu > ul > li > a {
+  padding: 23px 26px;
+  display: block;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 0 #0d0d0d;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+  line-height: 18px;
+}
+#menu > ul > li:hover > a {
+  background: url(../image/highlight-bg.png) repeat;
+  text-shadow: 0 -1px 0 #97321f;
+  text-shadow: 0 -1px 0 rgba(122, 42, 26, 0.64);
+}
+#menu > ul > li > a > span {
+  line-height: 18px;
+}
+/* 항상 마우스 오버표시 설정 */
+#menu > ul > li.active > a,
+#menu > ul > li.active > a:active {
+  background: url(../image/hover.png) repeat;
+}
+#menu > ul > li.sub > a:hover {
+  background: url(../image/hover.png) repeat;
+}
+/* 항상 마우스 오버표시 설정 끝 */
+/* 메뉴 내용 끝 */
+/* 마우스 올렸을때 내용 */
+#menu > ul ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 120px;
+  background: url(../image/menu-bg.png) repeat;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+#menu > ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  color: #000;
+  z-index: 2;
+  top: 64px;
+  left: 0;
+}
+#menu > ul ul:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+}
+#menu > ul ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#menu > ul ul li a {
+  padding: 18px 26px;
+  display: block;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 10em; /* 마우스 올렸을때 창 가로 크기 */
+  border-left: 4px solid transparent;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#menu > ul ul li a:hover {
+  border-left: 4px solid #d64e34;
+  background: url(../image/hover.png) repeat;
+}
+#menu > ul ul li a:active {
+  background: url(../image/menu-bg.png) repeat;
+}
+/* 마우스 올렸을때 내용 끝 */
+/* 메뉴 끝 */

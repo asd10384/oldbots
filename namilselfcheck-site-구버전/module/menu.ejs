@@ -1,0 +1,18 @@
+<div id="clock">
+      <span id="nowTimes">
+        <a href="/" id="realtime" style="margin-bottom: 5.4%;"></a>
+      </span>
+    </div>
+    <div id='menu'>
+      <ul>
+        <li class='active'><a href='/' title="홈으로 이동"><span>Home</span></a></li>
+        <% if (login) { %>
+          <li class='sub'><a href='/logout' title="로그아웃"><span>로그아웃</span></a></li>
+          <li class='sub'><a href='/delete' title="계정삭제"><span>계정삭제</span></a></li>
+          <li class='sub'><a href='/selfcheck' title="자가진단"><span>자가진단</span></a></li>
+        <% } else { %>
+          <li class='sub'><a href='/signup' title="회원가입"><span>회원가입</span></a></li>
+          <li class='sub'><a href='/login' title="로그인"><span>로그인</span></a></li>
+        <% } %>
+      </ul>
+    </div>

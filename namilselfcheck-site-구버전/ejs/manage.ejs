@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include('../module/header.ejs') %>
+    <title><%- title %></title>
+    <script src="../js/client.js"></script>
+    <% if (data.altext) { %>
+      <script>
+        alert('<%- data.altext %>');
+        location.href='/manage';
+      </script>
+    <% } %>
+  </head>
+  <body>
+    <%- include('../module/menu.ejs') %>
+    <div class="main">
+      <% if (!data.admin) { %>
+        <pre>관리자 계정을 입력해주세요.</pre>
+        <div class="login">
+          <form action="/manage" method="POST">
+            <a class="id">아이디</a> : <input class="text" type="text" name="id" required/><br/>
+            <a class="pw">비밀번호</a> : <input class="text" type="password" name="pw" required/><br/>
+                
+            <input class="btn" type="submit" value="로그인"/>
+          </form>
+        </div>
+      <% } else { %>
+        <div class="all">
+          <button type="button" class="btn" onclick="javascript=location.href='/manage?id=all'">전체 자가진단</button>
+        </div>
+        <div class="manage"><%- data.utext %>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>

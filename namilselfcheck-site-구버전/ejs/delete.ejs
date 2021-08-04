@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <%- include('../module/header.ejs') %>
+    <title><%- title %></title>
+    <script type="text/javascript">
+      function godelete() {
+        var form = document.createElement('form');
+        form.setAttribute('method', 'POST');
+        form.setAttribute('action', '/delete');
+        document.body.appendChild(form);
+        form.submit();
+      }
+    </script>
+  </head>
+  <body>
+    <%- include('../module/menu.ejs') %>
+    <div class="main">
+      <div class="title">
+        <pre>
+정말로 계정을 삭제하시겠습니까?
+        </pre>
+      </div>
+      <button type="button" class="btn" onclick="return godelete()">네</button><br/>
+      <button type="button" class="btn" onclick="javascript=location.href='/'">아니요</button>
+    </div>
+  </body>
+</html>
